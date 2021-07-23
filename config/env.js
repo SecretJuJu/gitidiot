@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const env = {
-  flag: process.env.FLAG || "Skills{thisisgitidiotflag}",
+  flag: process.env.FLAG,
   port: process.env.PORT || 8989,
 };
 
