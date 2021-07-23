@@ -2,9 +2,9 @@ import express from "express";
 import path from "path";
 import env from "./config/env.js";
 
-const app = express();
-const flag = env.flag || "Skills{thisisgitidiotflag}",
-const __dirname = path.resolve();
+const app = express(),
+  flag = env.flag || "Skills{thisisgitidiotflag}",
+  __dirname = path.resolve();
 
 app.get("/", (req, res) => {
   res.send(`
